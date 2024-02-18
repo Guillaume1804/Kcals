@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparateur de dépense kCal</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <main>
+        <h3>Fonctionnalité 2 : Impact sur la santé du choix de transport</h3>
+        <h4>Description :</h4>
+        <p>Proposez un calculateur qui estime l'impact sur la santé de choisir un mode de transport actif (comme le vélo)
+            par rapport à la voiture pour le trajet domicile-travail. Cela pourrait inclure des estimations des calories
+            brûlées, de la réduction du risque de maladies cardiovasculaires, et d'autres bénéfices pour la santé associés à
+            l'augmentation de l'activité physique.</p>
+
+        <h4>Implémentation :</h4>
+        <p>Interface utilisateur : Formulaire où les utilisateurs peuvent entrer la distance de leur trajet domicile-travail
+            et choisir leur mode de transport habituel.</p>
+
+        <h4>Calcul :</h4>
+        <p>Basé sur la distance et le mode de transport, estimez les calories qui pourraient être brûlées en optant pour un
+            mode de transport actif. Fournissez également des informations générales sur les bénéfices pour la santé de
+            l'activité physique régulière (par exemple, réduction du risque de certaines maladies, amélioration de la santé
+            mentale).</p>
+
+        <form id="f2">
+            <label for="distance">Distance (km) :</label>
+            <input type="text" id="distance" name="distance" required>
+            <label for="time">Temps estimé (min) :</label>
+            <input type="text" id="time" name="time" required>
+            <label for="poids">Votre Poids :</label>
+            <input type="text" id="poids" name="poids" required>
+            <label for="transport">Mode de transport :</label>
+            <select id="transport" name="transport" required>
+                <option value="car">Voiture</option>
+                <option value="bike">Vélo</option>
+                <option value="walk">Marche</option>
+            </select>
+            <input id="submit" type="submit" value="Calculer">
+        </form>
+
+        <h4>Affichage du résultat :</h4>
+        <p>Présentez une comparaison de l'impact sur la santé entre le mode de transport actif sélectionné et la conduite
+            d'une voiture, en termes de calories brûlées et de bénéfices potentiels pour la santé.</p>
+
+        <div id="result2"></div>
+    </main>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
